@@ -1,0 +1,2 @@
+# memorisallwuuu
+MEMORIS ALL GUYS
