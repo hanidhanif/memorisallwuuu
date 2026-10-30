@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Petualangan Kita · Memori Kita Bersama</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Nunito:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <div class="bg-overlay"></div>
+
+  <div class="music-player">
+    <button id="musicToggle" aria-label="Putar musik">
+      <span class="icon-play">♪</span>
+      <span class="icon-pause" style="display:none;">❚❚</span>
+    </button>
+    <span class="music-label">Putar Musik</span>
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="../music/lagu.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="album-page">
+    <header class="album-header">
+      <a href="../index.html" class="back-link">← Kembali ke Beranda</a>
+      <h1>Petualangan Kita</h1>
+      <p>Jalan-jalan, kesasar, ketawa di tengah hujan… semua jadi indah karena kita bersama.</p>
+    </header>
+
+    <div class="photo-grid">
+      <div class="photo-card">
+        <img src="../images/petualangan/01.jpg" alt="Petualangan" />
+        <div class="photo-caption">
+          <strong>Ke mana saja asalkan bersama</strong>
+          Peta boleh salah, tapi arah hati kita selalu sama.
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="../images/petualangan/02.jpg" alt="Petualangan" />
+        <div class="photo-caption">
+          <strong>Langit yang sama</strong>
+          Kita pernah berdiri di bawah langit ini, menjanjikan banyak hal.
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="../images/petualangan/03.jpg" alt="Petualangan" />
+        <div class="photo-caption">
+          <strong>Jejak kaki kita</strong>
+          Tinggal kenangan, tapi rasanya masih hangat.
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="../images/petualangan/04.jpg" alt="Petualangan" />
+        <div class="photo-caption">
+          <strong>Selfie di tengah jalan</strong>
+          Karena momen kecil selalu layak diabadikan.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Dibuat dengan penuh kasih · Untuk kita semua</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

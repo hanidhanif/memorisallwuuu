@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Momen yang Mengharukan · Memori Kita Bersama</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Nunito:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <div class="bg-overlay"></div>
+
+  <div class="music-player">
+    <button id="musicToggle" aria-label="Putar musik">
+      <span class="icon-play">♪</span>
+      <span class="icon-pause" style="display:none;">❚❚</span>
+    </button>
+    <span class="music-label">Putar Musik</span>
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="../music/lagu.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="album-page">
+    <header class="album-header">
+      <a href="../index.html" class="back-link">← Kembali ke Beranda</a>
+      <h1>Momen yang Mengharukan</h1>
+      <p>Ada saat-saat di mana kata-kata tak cukup… hanya rasa yang berbicara.</p>
+    </header>
+
+    <div class="photo-grid featured">
+      <div class="photo-card">
+        <img src="../images/mengharukan/01.jpg" alt="Momen mengharukan" />
+        <div class="photo-caption">
+          <strong>Pelukan yang berarti</strong>
+          Kadang diam saja sudah cukup untuk mengatakan segalanya.
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="../images/mengharukan/02.jpg" alt="Momen mengharukan" />
+        <div class="photo-caption">
+          <strong>Air mata bahagia</strong>
+          Bukan karena sedih, tapi karena terlalu penuh rasa.
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="../images/mengharukan/03.jpg" alt="Momen mengharukan" />
+        <div class="photo-caption">
+          <strong>Dukungan tanpa kata</strong>
+          Kalian selalu ada, bahkan saat aku merasa sendirian.
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="../images/mengharukan/04.jpg" alt="Momen mengharukan" />
+        <div class="photo-caption">
+          <strong>Terima kasih</strong>
+          Untuk setiap kebaikan yang tak sempat diucapkan.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Dibuat dengan penuh kasih · Untuk kita semua</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

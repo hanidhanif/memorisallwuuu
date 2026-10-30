@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tawa & Kekonyolan · Memori Kita Bersama</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Nunito:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <div class="bg-overlay"></div>
+
+  <div class="music-player">
+    <button id="musicToggle" aria-label="Putar musik">
+      <span class="icon-play">♪</span>
+      <span class="icon-pause" style="display:none;">❚❚</span>
+    </button>
+    <span class="music-label">Putar Musik</span>
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="../music/lagu.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="album-page">
+    <header class="album-header">
+      <a href="../index.html" class="back-link">← Kembali ke Beranda</a>
+      <h1>Tawa & Kekonyolan</h1>
+      <p>Bagian dari kita yang paling jujur… saat kita tertawa sampai perut sakit.</p>
+    </header>
+
+    <div class="photo-grid">
+      <div class="photo-card">
+        <img src="../images/tawa/01.jpg" alt="Tawa" />
+        <div class="photo-caption">
+          <strong>Wajah konyol favorit</strong>
+          Siapa bilang kita harus selalu terlihat keren?
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="../images/tawa/02.jpg" alt="Tawa" />
+        <div class="photo-caption">
+          <strong>Candaan yang tak ada habisnya</strong>
+          Satu orang mulai, semuanya ikut gila.
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="../images/tawa/03.jpg" alt="Tawa" />
+        <div class="photo-caption">
+          <strong>Momen random</strong>
+          Kadang kenangan terbaik lahir dari hal-hal sepele.
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="../images/tawa/04.jpg" alt="Tawa" />
+        <div class="photo-caption">
+          <strong>Tertawa sampai menangis</strong>
+          Dan kita bangga dengan itu.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Dibuat dengan penuh kasih · Untuk kita semua</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

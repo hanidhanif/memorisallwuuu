@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memori Kita Bersama</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Nunito:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background soft texture -->
+  <div class="bg-overlay"></div>
+
+  <!-- Music Player -->
+  <div class="music-player">
+    <button id="musicToggle" aria-label="Putar musik">
+      <span class="icon-play">♪</span>
+      <span class="icon-pause" style="display:none;">❚❚</span>
+    </button>
+    <span class="music-label">Putar Musik</span>
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="music/lagu.mp3" type="audio/mpeg">
+    Browser kamu tidak mendukung audio.
+  </audio>
+
+  <!-- Main Content -->
+  <main class="hero">
+    <div class="hero-content">
+      <p class="subtitle">Sebuah album kenangan</p>
+      <h1>Memori Kita Bersama</h1>
+      <p class="quote">
+        “Di sini tersimpan tawa, air mata,<br>
+        dan semua cerita yang pernah kita jalani bersama.”
+      </p>
+
+      <nav class="menu">
+        <a href="pages/momen-awal.html" class="menu-item">Momen Awal</a>
+        <a href="pages/petualangan.html" class="menu-item">Petualangan Kita</a>
+        <a href="pages/tawa.html" class="menu-item">Tawa & Kekonyolan</a>
+        <a href="pages/mengharukan.html" class="menu-item">Momen yang Mengharukan</a>
+        <a href="pages/semua.html" class="menu-item">Semua Kenangan</a>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Dibuat dengan penuh kasih · Untuk kita semua</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

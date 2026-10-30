@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Momen Awal · Memori Kita Bersama</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Nunito:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <div class="bg-overlay"></div>
+
+  <!-- Music Player -->
+  <div class="music-player">
+    <button id="musicToggle" aria-label="Putar musik">
+      <span class="icon-play">♪</span>
+      <span class="icon-pause" style="display:none;">❚❚</span>
+    </button>
+    <span class="music-label">Putar Musik</span>
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="../music/lagu.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="album-page">
+    <header class="album-header">
+      <a href="../index.html" class="back-link">← Kembali ke Beranda</a>
+      <h1>Momen Awal</h1>
+      <p>Di sinilah semuanya dimulai… langkah pertama yang membawa kita sampai di sini.</p>
+    </header>
+
+    <div class="photo-grid featured">
+      <!-- Ganti src dengan foto kamu -->
+      <div class="photo-card">
+        <img src="../images/momen-awal/01.jpg" alt="Momen pertama" />
+        <div class="photo-caption">
+          <strong>Awal yang tak terlupakan</strong>
+          Saat pertama kali kita berkumpul, belum tahu bahwa ini akan jadi cerita yang panjang.
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="../images/momen-awal/02.jpg" alt="Foto kenangan" />
+        <div class="photo-caption">
+          <strong>Tawa pertama</strong>
+          Ada yang bilang ini cuma kebetulan. Tapi kita tahu, ini takdir kecil.
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="../images/momen-awal/03.jpg" alt="Foto kenangan" />
+        <div class="photo-caption">
+          <strong>Masih canggung</strong>
+          Tapi dari canggung itu, tumbuh rasa nyaman yang hangat.
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="../images/momen-awal/04.jpg" alt="Foto kenangan" />
+        <div class="photo-caption">
+          <strong>Janji kecil</strong>
+          “Kita harus sering ketemu lagi ya.” Dan ternyata benar-benar terjadi.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Dibuat dengan penuh kasih · Untuk kita semua</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

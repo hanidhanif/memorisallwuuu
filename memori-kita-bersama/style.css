@@ -1,0 +1,313 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #FDF8F3;
+  color: #4A3F35;
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Soft background overlay */
+.bg-overlay {
+  position: fixed;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse at 20% 20%, rgba(255, 230, 210, 0.35) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(255, 210, 200, 0.25) 0%, transparent 50%),
+    linear-gradient(180deg, #FDF8F3 0%, #F9F1E9 100%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ===== Music Player ===== */
+.music-player {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  padding: 8px 16px 8px 10px;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(74, 63, 53, 0.08);
+  transition: all 0.3s ease;
+}
+
+.music-player:hover {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 6px 24px rgba(74, 63, 53, 0.12);
+}
+
+#musicToggle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #E8D5C4;
+  color: #4A3F35;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+
+#musicToggle:hover {
+  background: #D9C2AD;
+  transform: scale(1.05);
+}
+
+#musicToggle.playing {
+  background: #C9A88A;
+  color: #fff;
+}
+
+.music-label {
+  font-size: 13px;
+  font-weight: 400;
+  color: #6B5C50;
+  letter-spacing: 0.3px;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px 80px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 720px;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.subtitle {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #A08B7A;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.8rem, 8vw, 4.5rem);
+  font-weight: 400;
+  color: #4A3F35;
+  margin-bottom: 28px;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+}
+
+.quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.15rem, 3vw, 1.4rem);
+  font-style: italic;
+  color: #6B5C50;
+  margin-bottom: 48px;
+  line-height: 1.7;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== Navigation Menu ===== */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 16px;
+  margin-top: 12px;
+}
+
+.menu-item {
+  display: inline-block;
+  padding: 12px 22px;
+  background: rgba(255, 255, 255, 0.65);
+  color: #4A3F35;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 40px;
+  border: 1px solid rgba(201, 168, 138, 0.25);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.menu-item:hover {
+  background: #E8D5C4;
+  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(74, 63, 53, 0.1);
+}
+
+/* ===== Footer ===== */
+.footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 13px;
+  color: #A08B7A;
+  letter-spacing: 0.3px;
+}
+
+/* ===== Album Page Styles ===== */
+.album-page {
+  padding: 40px 24px 80px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.album-header {
+  text-align: center;
+  margin-bottom: 48px;
+  padding-top: 20px;
+}
+
+.album-header h1 {
+  font-size: clamp(2.2rem, 6vw, 3.2rem);
+  margin-bottom: 12px;
+}
+
+.album-header .back-link {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: #A08B7A;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.25s;
+}
+
+.album-header .back-link:hover {
+  color: #4A3F35;
+}
+
+.album-header p {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: #6B5C50;
+  font-size: 1.15rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* Photo Grid - Masonry-ish */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.photo-card {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(74, 63, 53, 0.07);
+  transition: all 0.35s ease;
+  border: 1px solid rgba(201, 168, 138, 0.15);
+}
+
+.photo-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 36px rgba(74, 63, 53, 0.12);
+}
+
+.photo-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.photo-card:hover img {
+  transform: scale(1.03);
+}
+
+.photo-caption {
+  padding: 16px 18px 20px;
+  font-size: 14px;
+  color: #5C4E42;
+  line-height: 1.5;
+}
+
+.photo-caption strong {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #4A3F35;
+}
+
+/* Special layout variants */
+.photo-grid.featured .photo-card:first-child {
+  grid-column: span 2;
+}
+
+.photo-grid.featured .photo-card:first-child img {
+  height: 360px;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+  .music-player {
+    top: 16px;
+    right: 16px;
+    padding: 6px 12px 6px 8px;
+  }
+
+  .music-label {
+    display: none;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-item {
+    width: 80%;
+    max-width: 260px;
+  }
+
+  .photo-grid.featured .photo-card:first-child {
+    grid-column: span 1;
+  }
+
+  .photo-grid.featured .photo-card:first-child img {
+    height: 260px;
+  }
+}
